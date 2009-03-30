@@ -9,10 +9,33 @@ body {
   background-color: #ffffff;
 }
 
+#navigation li {
+    display: inline;
+}
+
+#navigation a:link, #navigation a:visited {
+    text-decoration: none; 
+    color: #000000;
+    background: #bbbbbb;
+    border: 1px solid #898989;
+    padding: 5px 10px;
+    position: relative;
+    margin-right: 5px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+    color: #cccccc;
+}
+
+#navigation a.current {
+    background: #ffffff;
+}
+
 .tabContent {
     display: none;
 }
 
-#presentation {
+.tabContent#presentation {
     display: block;
 }

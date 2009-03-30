@@ -18,12 +18,13 @@
   <body>
     <div id="header">
       <h1>L'auberge aux trois marcassins</h1>
-      <ul id="sections">
-	<li><a href="#" onClick="changeTab('presentation');return false;">Presentation</a></li>
-	<li><a href="#" onClick="changeTab('food');return false;">La table</a></li>
-	<li><a href="#" onClick="changeTab('rooms');return false;">Les chambres</a></li>
-	<li><a href="#" onClick="changeTab('links');return false;">Liens</a></li>
-	<li><a href="#" onClick="changeTab('infos');return false;">Infos pratiques</a></li>
+      <ul id="navigation">
+	<!-- on va partir la dessus pour l'instant ... on changera peut être aprés -->
+	<li><a href="#" id="presentationTab" onClick="changeTab('presentation');return false;" class="current">Presentation</a></li>
+	<li><a href="#" id="foodTab" onClick="changeTab('food');return false;">La table</a></li>
+	<li><a href="#" id="roomsTab" onClick="changeTab('rooms');return false;">Les chambres</a></li>
+	<li><a href="#" id="linksTab" onClick="changeTab('links');return false;">Liens</a></li>
+	<li><a href="#" id="infosTab" onClick="changeTab('infos');return false;">Infos pratiques</a></li>
       </ul>
     </div>
     <div id="content">

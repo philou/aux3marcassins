@@ -13,13 +13,25 @@ function getElementByAttr(e,attr,value) {
   return tab;
 }
 
+function hideTab(tabId) {
+  var tabContent = document.getElementById(tabId);
+  tabContent.style.display = 'none';
+  var tab = document.getElementById(tabId + 'Tab');
+  tab.setAttribute('class', '');
+}
+
+function showTab(tabId) {
+  var tabContent = document.getElementById(tabId);
+  tabContent.style.display = 'block';
+  var tab = document.getElementById(tabId + 'Tab');
+  tab.setAttribute('class', 'current');
+}
+
 function changeTab(tabId) {
   var tabs = getElementByAttr(document,'class','tabContent');
   var i;
   for(i = 0; i < tabs.length; ++i) {
-    tabs[i].style.display = 'none';
+    hideTab(tabs[i].id);
   }
-
-  var newTab = document.getElementById(tabId);
-  newTab.style.display = 'block';
+  showTab(tabId);
 }
