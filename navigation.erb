@@ -1,14 +1,22 @@
+  <div id="wrapper">
     <div id="header">
-      <h1>L'auberge aux trois marcassins</h1>
-      <ul id="navigation">
-	<li><a href="./index.html" id="indexTab"><%= l(:indexTab) %></a></li>
-	<li><a href="./resto.html" id="restoTab"><%= l(:restoTab) %></a></li>
-	<li><a href="./hotel.html" id="hotelTab"><%= l(:hotelTab) %></a></li>
-	<li><a href="./contact.html" id="contactTab"><%= l(:contactTab) %></a></li>
-      </ul>
 
-      <ul id="languages">
-	<li><a href="../fr/<%= currentFileName %>" id="frLink">français</a></li>
-	<li><a href="../en/<%= currentFileName %>" id="enLink">english</a></li>
-      </ul>
+      <div id="title">
+	<h1><span></span>L'auberge aux trois marcassins</h1>
+      </div>
+      
+      <div id="navigation">
+	<ul id="sections">
+	  <li><a href="./index.html" id="indexTab"><%= l(:indexTab) %></a></li>
+	  <li><a href="./resto.html" id="restoTab"><%= l(:restoTab) %></a></li>
+	  <li><a href="./hotel.html" id="hotelTab"><%= l(:hotelTab) %></a></li>
+	  <li><a href="./contact.html" id="contactTab"><%= l(:contactTab) %></a></li>
+	</ul>
+
+	<ul id="languages">
+	  <li><a href="../fr/<%= currentFileName %>" id="frLink"><img src="../images/frenchFlag.gif"/></a></li>
+	  <li><a href="../en/<%= currentFileName %>" id="enLink"><img src="../images/englishFlag.gif"/></a></li>
+	</ul>
+      </div>
+
     </div>

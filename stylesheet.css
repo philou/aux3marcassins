@@ -1,19 +1,75 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #000000;
-  background-color: #ffffff;
+    font-family: Georgia, Palatino, Times, sans-serif;
+    color: #000000;
+    background-color: #338833;
+    font-size: 62.5%;
 }
 
-#navigation li {
+#wrapper {
+    background-color: #ffffff;
+    width: 710px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+a img {
+    border: 0;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+#title {
+    margin: 15px auto;
+    overflow: hidden;
+    width: 442px;
+    height: 72px;
+}
+
+#title span {
+    position: absolute;
+    background: url(images/title.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* links bar */
+#navigation {
+    width: 100%;
+}
+
+/* sections tabs */
+#sections {
+    width: 600px;
+    float: left;
+}
+#sections li {
     display: inline;
 }
-
-#navigation a:link, #navigation a:visited {
+#sections a:link, #sections a:visited {
     text-decoration: none; 
     color: #000000;
     background: #bbbbbb;
@@ -22,13 +78,37 @@ body {
     position: relative;
     margin-right: 5px;
 }
-
-#navigation a:hover {
+#sections a:hover {
     text-decoration: underline;
     color: #cccccc;
 }
-
-#index #navigation a#indexTab, #resto #navigation a#restoTab, #hotel #navigation a#hotelTab, #contact #navigation a#contactTab {
-    background: #ffffff;
+#index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #contact #sections a#contactTab {
+    background: transparent;
+    border-bottom-color: transparent;
 }
 
+/* languages flags */
+#languages {
+    width: 100px;
+    float: right;
+}
+#languages li {
+    display: inline;
+}
+#languages a:link, #languages a:visited {
+    border: 1px solid #898989;
+    margin-left: 5px;
+    position: relative;
+}
+
+#index img {
+    float: right;
+}
+
+#resto img {
+    float: left;
+}
+
+#hotel img {
+    float: right;
+}
