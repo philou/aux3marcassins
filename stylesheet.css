@@ -43,7 +43,7 @@ li {
 }
 
 #title {
-    margin: 15px auto;
+    margin: 10px auto 40px auto;
     overflow: hidden;
     width: 442px;
     height: 72px;
@@ -52,19 +52,16 @@ li {
 #title span {
     position: absolute;
     background: url(images/title.jpg) no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 442px;
+    height: 72px;
 }
 
-/* links bar */
-#navigation {
-    width: 100%;
-}
 
 /* sections tabs */
 #sections {
-    width: 600px;
-    float: left;
+    padding: 1px;
+    border: 1px solid transparent;
+    border-bottom-color: #898989;
 }
 #sections li {
     display: inline;
@@ -83,32 +80,39 @@ li {
     color: #cccccc;
 }
 #index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #contact #sections a#contactTab {
-    background: transparent;
-    border-bottom-color: transparent;
+    background: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 /* languages flags */
 #languages {
-    width: 100px;
-    float: right;
+    text-align: right;
 }
 #languages li {
     display: inline;
 }
 #languages a:link, #languages a:visited {
-    border: 1px solid #898989;
     margin-left: 5px;
     position: relative;
 }
+#languages img {
+    border: 1px solid #898989;
+}
 
-#index img {
+#content {
+    margin: 10px 0 0 0;
+}
+
+#content img {
+    padding: 5px 15px 15px 15px;
+}
+
+#index #content img {
     float: right;
 }
-
-#resto img {
+#resto #content img {
     float: left;
 }
-
-#hotel img {
+#hotel #content img {
     float: right;
 }
