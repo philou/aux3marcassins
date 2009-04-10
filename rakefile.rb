@@ -1,5 +1,11 @@
 require 'rake'
+require 'rake/clean'
 require 'erb'
+
+LANGUAGES = ['en', 'fr']
+FILES = ['index', 'resto', 'hotel', 'contact']
+
+CLOBBER.include(LANGUAGES)
 
 def readFileContent(filePath)
   result = Array.new
@@ -19,8 +25,6 @@ end
 def erbInclude(filePath)
   return erbTransform(filePath)
 end
-
-
 
 def htmlFileName(htmlFilePath)
   htmlFilePath.sub(/^[^\/]*\//,'')
@@ -51,8 +55,9 @@ def setCurrentFileName(value)
   $currentFileName = value
 end
 
-directory 'fr'
-directory 'en'
+LANGUAGES.each do |lang|
+  directory lang
+end
 
 rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| languageOf(tn) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
 
@@ -64,10 +69,10 @@ rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| languageOf(tn) }, proc {|
   end
 end
 
-task :default => ['fr/index.html', 'fr/resto.html', 'fr/hotel.html', 'fr/contact.html',
-                  'en/index.html', 'en/resto.html', 'en/hotel.html', 'en/contact.html']
-
-task :clean do |t|
-  sh "rm -rf fr"
-  sh "rm -rf en"
+desc 'Generates file for the multilingual web site'
+LANGUAGES.each do |lang|
+  FILES.each do |f|
+    task :default => lang + '/' + f + '.html'
+  end
 end
+
