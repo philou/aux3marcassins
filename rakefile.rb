@@ -1,12 +1,17 @@
 require 'rake'
 require 'rake/clean'
 require 'erb'
+require 'batchftp'
 
 TARGET_DIR = 'site/'
+IMAGES_DIR = 'images'
+PLAIN_OLD_FILES = ['stylesheet.css', 'script.js']
 LANGUAGES = ['en', 'fr']
 FILES = ['index', 'resto', 'hotel', 'contact']
 
-CLOBBER.include(TARGET_DIR)
+LANGUAGES.each do |lang|
+  CLOBBER.include(TARGET_DIR + lang)
+end
 
 def readFileContent(filePath)
   result = Array.new
@@ -73,6 +78,16 @@ rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| TARGET_DIR + languageOf(t
   end
 end
 
+([IMAGES_DIR] + PLAIN_OLD_FILES).each do |file|
+  task TARGET_DIR + file => file do |t|
+    begin
+      sh "ln -s #{file} #{t.name}"
+     rescue
+      puts $!
+    end
+  end
+end
+
 desc 'Generates file for the multilingual web site'
 LANGUAGES.each do |lang|
   FILES.each do |f|
@@ -80,3 +95,13 @@ LANGUAGES.each do |lang|
   end
 end
 
+desc 'Deploys the site'
+task :deploy => :default do
+  verbose('deploying to ftp') do
+    puts 'reading ftp password from password.txt'
+    password = readFileContent("password.txt")
+    Net::FTP.open('ftp-windows.fr.oleane.com', 'admweb@madkatbo.fr.fto', password) do |ftp|
+      uploadHierarchy(ftp, 'site', '.', ['.html', '.css', '.js'])
+    end
+  end
+end

@@ -2,3 +2,9 @@
 * faire des jolis menus
 * faire un dégradé sur le bord
 * mettre une legende derrière les images et les liens
+
+* dans le rake : 
+- faire une commande upload recursive d'un directory, en utilisant un
+   filtre pour les extensions texte
+- laisser les liens symboliques permanents, ou carrement bouger les
+   les images et fichiers dans site
