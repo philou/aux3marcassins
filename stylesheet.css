@@ -67,9 +67,10 @@ li {
     display: inline;
 }
 #sections a:link, #sections a:visited {
-    text-decoration: none; 
-    color: #000000;
-    background: #bbbbbb;
+    text-decoration: none;
+    font-weight: bold;
+    color: #338833;
+    background: #dddddd;
     border: 1px solid #898989;
     padding: 1px 10px;
     position: relative;
@@ -77,7 +78,7 @@ li {
 }
 #sections a:hover {
     text-decoration: underline;
-    color: #cccccc;
+    color: #888833;
 }
 #index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #contact #sections a#contactTab {
     background: #ffffff;

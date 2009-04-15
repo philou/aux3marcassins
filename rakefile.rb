@@ -2,10 +2,11 @@ require 'rake'
 require 'rake/clean'
 require 'erb'
 
+TARGET_DIR = 'site/'
 LANGUAGES = ['en', 'fr']
 FILES = ['index', 'resto', 'hotel', 'contact']
 
-CLOBBER.include(LANGUAGES)
+CLOBBER.include(TARGET_DIR)
 
 def readFileContent(filePath)
   result = Array.new
@@ -26,14 +27,17 @@ def erbInclude(filePath)
   return erbTransform(filePath)
 end
 
+def trimSiteDir(path)
+  path.sub(TARGET_DIR, '')
+end
 def htmlFileName(htmlFilePath)
-  htmlFilePath.sub(/^[^\/]*\//,'')
+  trimSiteDir(htmlFilePath).sub(/^[^\/]*\//,'')
 end
 def erbTemplateOf(htmlFilePath)
   htmlFileName(htmlFilePath).sub(/\.html$/, '.erb')
 end
 def languageOf(htmlFilePath)
-  htmlFilePath.sub(/\/.*$/, '')
+  trimSiteDir(htmlFilePath).sub(/\/.*$/, '')
 end
 def localsOf(htmlFilePath)
   languageOf(htmlFilePath) + '.rb'
@@ -56,10 +60,10 @@ def setCurrentFileName(value)
 end
 
 LANGUAGES.each do |lang|
-  directory lang
+  directory TARGET_DIR + lang
 end
 
-rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| languageOf(tn) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
+rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| TARGET_DIR + languageOf(tn) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
 
   setCurrentLocal( eval(readFileContent( localsOf(t.name))))
   setCurrentFileName( htmlFileName(t.name))
@@ -72,7 +76,7 @@ end
 desc 'Generates file for the multilingual web site'
 LANGUAGES.each do |lang|
   FILES.each do |f|
-    task :default => lang + '/' + f + '.html'
+    task :default => TARGET_DIR + lang + '/' + f + '.html'
   end
 end
 
