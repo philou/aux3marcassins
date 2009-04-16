@@ -3,8 +3,7 @@
 * faire un dégradé sur le bord
 * mettre une legende derrière les images et les liens
 
-* dans le rake : 
-- faire une commande upload recursive d'un directory, en utilisant un
-   filtre pour les extensions texte
-- laisser les liens symboliques permanents, ou carrement bouger les
-   les images et fichiers dans site
+
+* demnader à Orange si on peut faire une redirection sur fr/index.html
+* demander à Maman si elle peut changer son nom de domaine
+* si nécessaire, générer fr dans site/ à la place de site/fr/

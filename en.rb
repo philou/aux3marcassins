@@ -3,7 +3,7 @@
   :indexTab => "Welcome",
   :restoTab => "Menu",
   :hotelTab => "Bedrooms",
-  :contactTab => "Contact us",
+  :infoTab => "Practical information",
 
   :indexContent => "Situated between Nancy and Metz, 2 minutes from A31 Beaune - Luxembourg motorway, the Auberge aux Trois Marcassins offers delightful rooms and delicious traditional French cuisine.",
 

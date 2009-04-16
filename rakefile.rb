@@ -7,7 +7,7 @@ TARGET_DIR = 'site/'
 IMAGES_DIR = 'images'
 PLAIN_OLD_FILES = ['stylesheet.css', 'script.js']
 LANGUAGES = ['en', 'fr']
-FILES = ['index', 'resto', 'hotel', 'contact']
+FILES = ['index', 'resto', 'hotel', 'info']
 
 LANGUAGES.each do |lang|
   CLOBBER.include(TARGET_DIR + lang)

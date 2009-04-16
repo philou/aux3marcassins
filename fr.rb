@@ -3,7 +3,7 @@
   :indexTab => "Accueil",
   :restoTab => "La table",
   :hotelTab => "Les chambres",
-  :contactTab => "Nous contacter",
+  :infoTab => "Informations pratiques",
 
   :indexContent => "Entre Nancy et Metz, sortie 25, à une minute de l'axe autoroutier A31, l'Auberge aux Trois Marcassins vous propose son gîte et sa cuisine de pays.",
 

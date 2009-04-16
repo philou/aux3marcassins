@@ -4,69 +4,51 @@
   
   <%= erbInclude 'navigation.erb' %>
 
-    <div id="content">
-      <div id="resto">
-	<img src="../images/restaurant.jpg"/>
-	<p><%= l(:restoContent1) %></p>
-	<p><%= l(:restoContent2) %></p>
+  <div id="content">
+    <div id="resto">
 
-	<div id="dayMenu">
-	  <h3><%= l(:dayMenuTitle) %></h3>
-	  <p>(<%= l(:changedEveryDay) %>)</p>
-	  <ul>
-	    <li>
-	      <ul>
-		<li><%= l(:fishSoup) %></li>
-		<li><%= l(:salad) %></li>
-		<li><%= l(:ham) %></li>
-	      </ul>
-	    </li>
-	    <li>
-	      <ul>
-		<li><%= l(:rabbit) %></li>
-		<li><%= l(:emporor) %></li>
-	      </ul>
-	    </li>
-	    <li>
-	      <ul>
-		<li><%= l(:cheeseOrDessert) %></li>
-	      </ul>
-	    </li>
-	  </ul>
+      <div id="summary">
+	<img src="../images/restaurant.png"/>
+
+	<div>
+	  <p><%= l(:restoContent1) %></p>
+	  <p><%= l(:restoContent2) %></p>
 	</div>
-
-	<div id="aLaCarte">
-	  <h3><%= l(:aLaCarteTitle) %></h3>
-	  <ul>
-	    <li>
-	      <ul>
-		<li><%= l(:wildBoarHam) %></li>
-		<li><%= l(:fattedDuckLiver) %></li>
-		<li><%= l(:effilochade) %></li>
-	      </ul>
-	    </li>
-	    <li>
-	      <ul>
-		<li><%= l(:scalops) %></li>
-		<li><%= l(:roeDeer) %></li>
-		<li><%= l(:grilledWildBoar) %></li>
-		<li><%= l(:redDeer) %></li>
-		<li><%= l(:duck) %></li>
-	      </ul>
-	    </li>
-	    <li>
-	      <ul>
-		<li><%= l(:frozenNougat) %></li>
-	      </ul>
-	    </li>
-	  </ul>
-	</div>
-
-	<div id="otherMenus">
-	  <h3><%= l(:otherMenusTitle)%></h3>
-	</div>
-
       </div>
-    </div>
 
-<%= erbInclude 'footer.erb' %>
+      <div id="dayMenu" class="menu">
+	<h3><%= l(:dayMenuTitle) %></h3>
+	<em class="menuNotice">(<%= l(:changedEveryDay) %>)</em>
+	<p><%= l(:fishSoup) %></p>
+	<p><%= l(:salad) %></p>
+	<p><%= l(:ham) %></p>
+	<p class="separator"/>
+	<p><%= l(:rabbit) %></p>
+	<p><%= l(:emporor) %></p>
+	<p class="separator"/>
+	<p><%= l(:cheeseOrDessert) %></p>
+      </div>
+
+      <div id="aLaCarte" class="menu">
+	<h3><%= l(:aLaCarteTitle) %></h3>
+	<p><%= l(:wildBoarHam) %></p>
+	<p><%= l(:fattedDuckLiver) %></p>
+	<p><%= l(:effilochade) %></p>
+	<p class="separator"/>
+	<p><%= l(:scalops) %></p>
+	<p><%= l(:roeDeer) %></p>
+	<p><%= l(:grilledWildBoar) %></p>
+	<p><%= l(:redDeer) %></p>
+	<p><%= l(:duck) %></p>
+	<p class="separator"/>
+	<p><%= l(:frozenNougat) %></p>
+      </div>
+
+      <div id="otherMenus" class="menu">
+	<h3><%= l(:otherMenusTitle)%></h3>
+      </div>
+
+    </div>
+  </div>
+
+  <%= erbInclude 'footer.erb' %>

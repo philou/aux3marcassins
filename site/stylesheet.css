@@ -6,7 +6,7 @@
 body {
     font-family: Georgia, Palatino, Times, sans-serif;
     color: #000000;
-    background-color: #338833;
+    background: #338833 url(images/background.png) 50% 0 repeat-y;
     font-size: 62.5%;
 }
 
@@ -24,14 +24,18 @@ a img {
 
 h1 {
     font-size: 3.0em;
+    color: #338833;
 }
 
 h2 {
     font-size: 2.0em;
+    color: #338833;
+    margin: 
 }
 
 h3 {
     font-size: 1.5em;
+    color: #338833;
 }
 
 p {
@@ -80,7 +84,7 @@ li {
     text-decoration: underline;
     color: #888833;
 }
-#index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #contact #sections a#contactTab {
+#index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #info #sections a#infoTab {
     background: #ffffff;
     border-bottom-color: #ffffff;
 }
@@ -100,20 +104,46 @@ li {
     border: 1px solid #898989;
 }
 
+/* general content styling */
 #content {
     margin: 10px 0 0 0;
 }
-
 #content img {
     padding: 5px 15px 15px 15px;
 }
 
+/* index */
 #index #content img {
     float: right;
 }
+
+/* restaurant */
 #resto #content img {
     float: left;
 }
+#resto #content #summary {
+    overflow: hidden;
+    margin-bottom: -120px;
+}
+#resto #content .menu {
+    text-align: center;
+}
+#resto #content em.menuNotice {
+    font-size: 1em;
+    font-style: italic;
+}
+#resto #content .separator:after {
+    content: "~";
+    color: #888833;
+}
+#resto #content .menu+.menu {
+    margin-top: 2em;
+}
+#resto #content h3+p, #resto #content em.menuNotice+p {
+    margin-top: 0.5em;
+}
+
+/* hotel */
 #hotel #content img {
     float: right;
 }
