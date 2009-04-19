@@ -13,7 +13,7 @@ body {
 #wrapper {
     background-color: #ffffff;
     width: 710px;
-    height: 1000px;
+    /*height: 1000px;*/
     margin: 0 auto;
     padding: 5px;
 }
@@ -30,12 +30,12 @@ h1 {
 h2 {
     font-size: 2.0em;
     color: #338833;
-    margin: 
 }
 
 h3 {
     font-size: 1.5em;
     color: #338833;
+    margin: 2em auto 0.5em;
 }
 
 p {
@@ -44,6 +44,8 @@ p {
 
 li {
     font-size: 1.5em;
+    list-style-position: inside;
+    list-style-image: url(images/bullet.png);
 }
 
 #title {
@@ -100,9 +102,6 @@ li {
     margin-left: 5px;
     position: relative;
 }
-#languages img {
-    border: 1px solid #898989;
-}
 
 /* general content styling */
 #content {
@@ -123,7 +122,7 @@ li {
 }
 #resto #content #summary {
     overflow: hidden;
-    margin-bottom: -120px;
+    margin-bottom: -160px;
 }
 #resto #content .menu {
     text-align: center;
@@ -132,15 +131,18 @@ li {
     font-size: 1em;
     font-style: italic;
 }
+#resto #content .separator {
+    font-size: 3em;
+    color: #888833;
+    margin: auto -10px;
+}
 #resto #content .separator:after {
     content: "~";
-    color: #888833;
 }
-#resto #content .menu+.menu {
-    margin-top: 2em;
-}
-#resto #content h3+p, #resto #content em.menuNotice+p {
-    margin-top: 0.5em;
+#resto #content .menuNotice {
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 auto 0.5em;
 }
 
 /* hotel */
