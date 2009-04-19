@@ -1,5 +1,8 @@
-* corriger le tab sur practical infos
 * mettre une legende derrière les images et les liens
+* ne mettre qu'un mot par tab (pb iphone)
+* virer les content: "~" dans les css pour les separateurs, le mettre
+   dans le html, IE n'aime pas beaucoup
+* remplacer les dimensions verticales en px par des ems
 
 
 * demnader à Orange si on peut faire une redirection sur fr/index.html
