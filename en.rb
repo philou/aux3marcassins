@@ -1,14 +1,16 @@
 { :keywords => "auberge, restaurant, hotel, game, traditional, aux trois marcassins, aux 3 marcassins",
   :description => "Official information site for l'Auberge aux trois marcassins",
   :indexTab => "Welcome",
-  :restoTab => "Menu",
-  :hotelTab => "Bedrooms",
-  :infoTab => "Practical information",
+  :restoTab => "Restaurant",
+  :hotelTab => "Hotel",
+  :infoTab => "Informations",
 
   :indexContent => "Situated between Nancy and Metz, 2 minutes from A31 Beaune - Luxembourg motorway, the Auberge aux Trois Marcassins offers delightful rooms and delicious traditional French cuisine.",
+  :frontPic => "Front door photo",
 
   :restoContent1 => "Whether for business, with the family or in the company of friends, the Auberge's staff will make you feel at home. The chef adjusts his menus according to the changing seasons, game being the house speciality during the hunting season, from September to February. You are sure to find a good wine to enhance your meal in the long wine list.",
   :restoContent2 => "A fixed menu with choices of starter, main dish and dessert and a kid's menu are available daily. ",
+  :restaurantPic => "Dining room photo",
   :dayMenuTitle => "Example of our daily menu",
   :changedEveryDay => "modified daily",
   :fishSoup => "Fish soup",
@@ -31,6 +33,7 @@
 
   :hotelContent1 => "The spacious rooms are very pretty, equiped with TV and telephone, and en-suite bathroom and toilet.",
   :hotelContent2 => "Special rates for bed, breakfast and evening meal are also available for one or two people (in the same room).",
+  :roomPic => "Hotel room photo",
   :hotelFacilities => "Formulas and services",
   :roomsFor2 => "Twin room",
   :roomsFor3 => "Room for Three",
@@ -40,5 +43,8 @@
   :etapesFor2 => "B + B and evening meal for two in the same room",
 
   :openingDays => "The restaurant is opened all week except Saturday lunch and Sunday lunch and diner",
-  :yearlyHolidays => "The Auberge (roooms and restaurant) is opened all year except for one week from the 26th Decembre and two weeks in April."
+  :yearlyHolidays => "The Auberge (roooms and restaurant) is opened all year except for one week from the 26th Decembre and two weeks in April.",
+  :mapTitle => "View the auberge on Google Maps",
+  :howToCome => "How to come",
+  :emailTitle => "Contact the auberge by email"
 }

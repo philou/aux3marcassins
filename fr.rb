@@ -1,14 +1,16 @@
 { :keywords => "auberge, restaurant, hotel, gibier, tradition, aux trois marcassins, aux 3 marcassins",
   :description => "Site officiel d'information de l'Auberge aux trois marcassins",
   :indexTab => "Accueil",
-  :restoTab => "La table",
-  :hotelTab => "Les chambres",
-  :infoTab => "Informations pratiques",
+  :restoTab => "Restaurant",
+  :hotelTab => "Hotel",
+  :infoTab => "Informations",
 
   :indexContent => "Entre Nancy et Metz, sortie 25, à une minute de l'axe autoroutier A31, l'Auberge aux Trois Marcassins vous propose son gîte et sa cuisine de pays.",
+  :frontPic => "Photo de la facade",
 
   :restoContent1 => "L'Auberge aux trois marcassins vous propose pour vos repas d'affaires ou entre amis une cuisine de caractère au gré des saisons, avec gibier en période autorisée et un grand choix de vins de qualité.",
   :restoContent2 => "Tous les jours : carte, menu suggestion, menu du jour avec choix d'entrée, de plat et de dessert. Menu enfant.",
+  :restaurantPic => "Photo de la salle",
   :dayMenuTitle => "Exemple de menu du jour",
   :changedEveryDay => "modifié quotidiennement",
   :fishSoup => "Soupe de poisson et croutons",
@@ -31,6 +33,7 @@
 
   :hotelContent1 => "L'Auberge aux Trois Marcassins vous propose aussi ses chambres spacieuses et confortables avec salle de bains et wc, téléphone et télévision cablée pour 1,2,3 ou 4 personnes avec service petit déjeuner.",
   :hotelContent2 => "Soirée étape comprenant le menu du jour, une boisson, le café, la chambre et le petit déjeuner.",
+  :roomPic => "Photo d'une chambre",
   :hotelFacilities => "Formules et services",
   :roomsFor2 => "Chambres deux personnes",
   :roomsFor3 => "Chambres trois personnes",
@@ -40,5 +43,8 @@
   :etapesFor2 => "Soirée étape une chambre deux personnes à tarif avantageux",
 
   :openingDays => "le restaurant est ouverts toute la semaine sauf le samedi midi et le dimanche midi et soir.",
-  :yearlyHolidays => "L'établissement est ouvert toute l'année sauf une semaine à partir du 26 décembre et deux semaines en avril."
+  :yearlyHolidays => "L'établissement est ouvert toute l'année sauf une semaine à partir du 26 décembre et deux semaines en avril.",
+  :mapTitle => "Situer l'auberge sur Google Maps",
+  :howToCome => "Comment venir",
+  :emailTitle => "Contacter l'auberge par email"
 }

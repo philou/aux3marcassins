@@ -13,7 +13,6 @@ body {
 #wrapper {
     background-color: #ffffff;
     width: 710px;
-    /*height: 1000px;*/
     margin: 0 auto;
     padding: 5px;
 }
@@ -105,10 +104,10 @@ li {
 
 /* general content styling */
 #content {
-    margin: 10px 0 0 0;
+    margin: 2em 0 0 0;
 }
 #content img {
-    padding: 5px 15px 15px 15px;
+    padding: 0 15px;
 }
 
 /* index */
@@ -122,7 +121,7 @@ li {
 }
 #resto #content #summary {
     overflow: hidden;
-    margin-bottom: -160px;
+    margin-bottom: -14em;
 }
 #resto #content .menu {
     text-align: center;
@@ -134,10 +133,7 @@ li {
 #resto #content .separator {
     font-size: 3em;
     color: #888833;
-    margin: auto -10px;
-}
-#resto #content .separator:after {
-    content: "~";
+    margin: auto -1em;
 }
 #resto #content .menuNotice {
     font-size: 1em;
