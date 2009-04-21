@@ -3,14 +3,36 @@ require 'rake/clean'
 require 'erb'
 require 'batchftp'
 
-TARGET_DIR = 'site/'
+
+TARGET_DIR = 'site'
 IMAGES_DIR = 'images'
 PLAIN_OLD_FILES = ['stylesheet.css', 'script.js']
-LANGUAGES = ['en', 'fr']
 FILES = ['index', 'resto', 'hotel', 'info']
 
+class Language
+  
+  private_class_method :new
+  attr_reader :directory, :clobberFiles, :localsFile, :resourcesPrefix
+
+  def initialize(directory, clobberFiles, localsFile, resourcesPrefix)
+    @directory, @clobberFiles, @localsFile, @resourcesPrefix = directory, clobberFiles, localsFile, resourcesPrefix
+  end
+
+  def Language.foreign(initials)
+    new(initials, File::join(TARGET_DIR, initials), initials + ".rb", "..")
+  end
+
+  def Language.french
+    new(".", FILES.map { |f| File::join(TARGET_DIR, f + ".html") }, "fr.rb", ".")
+  end
+
+end
+
+LANGUAGES = [Language.french, Language.foreign('en')]
+
+
 LANGUAGES.each do |lang|
-  CLOBBER.include(TARGET_DIR + lang)
+  CLOBBER.include(lang.clobberFiles)
 end
 
 def readFileContent(filePath)
@@ -33,27 +55,29 @@ def erbInclude(filePath)
 end
 
 def trimSiteDir(path)
-  path.sub(TARGET_DIR, '')
+  path.sub(TARGET_DIR, '').sub(/^\//,'')
 end
 def htmlFileName(htmlFilePath)
-  trimSiteDir(htmlFilePath).sub(/^[^\/]*\//,'')
+  File::basename(htmlFilePath)
 end
 def erbTemplateOf(htmlFilePath)
-  htmlFileName(htmlFilePath).sub(/\.html$/, '.erb')
+  File::basename(htmlFilePath, ".*")+".erb"
+end
+def directoryOf(htmlFilePath)
+  dir, _file = File.split(trimSiteDir(htmlFilePath))
+  dir
 end
 def languageOf(htmlFilePath)
-  trimSiteDir(htmlFilePath).sub(/\/.*$/, '')
-end
-def localsOf(htmlFilePath)
-  languageOf(htmlFilePath) + '.rb'
+  dir = directoryOf(htmlFilePath)
+  LANGUAGES.detect {|lang| lang.directory == dir}
 end
 
-$currentLocal = {}
+$currentLocals = {}
 def l(key)
-  ERB::Util::html_escape($currentLocal[key])
+  ERB::Util::html_escape($currentLocals[key])
 end
-def setCurrentLocal(dico)
-  $currentLocal = dico
+def setCurrentLocals(dico)
+  $currentLocals = dico
 end
 
 $currentFileName = ''
@@ -65,12 +89,16 @@ def setCurrentFileName(value)
 end
 
 LANGUAGES.each do |lang|
-  directory TARGET_DIR + lang
+  directory File::join(TARGET_DIR, lang.directory)
 end
 
-rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| TARGET_DIR + languageOf(tn) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
+rule '.html' => [proc {|tn| languageOf(tn).localsFile }, proc {|tn| File::join(TARGET_DIR, directoryOf(tn)) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
 
-  setCurrentLocal( eval(readFileContent( localsOf(t.name))))
+  language = languageOf(t.name)
+  locals = eval(readFileContent( language.localsFile))
+  locals[:resPrefix] = language.resourcesPrefix
+  
+  setCurrentLocals(locals)
   setCurrentFileName( htmlFileName(t.name))
 
   File.open( t.name, 'w') do |n|
@@ -78,20 +106,10 @@ rule '.html' => [proc {|tn| localsOf(tn) }, proc {|tn| TARGET_DIR + languageOf(t
   end
 end
 
-([IMAGES_DIR] + PLAIN_OLD_FILES).each do |file|
-  task TARGET_DIR + file => file do |t|
-    begin
-      sh "ln -s #{file} #{t.name}"
-     rescue
-      puts $!
-    end
-  end
-end
-
 desc 'Generates file for the multilingual web site'
 LANGUAGES.each do |lang|
   FILES.each do |f|
-    task :default => TARGET_DIR + lang + '/' + f + '.html'
+    task :default => File::join(TARGET_DIR, lang.directory, f + '.html')
   end
 end
 
