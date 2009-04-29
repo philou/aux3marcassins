@@ -47,9 +47,18 @@ li {
     list-style-image: url(images/bullet.png);
 }
 
-#title {
-    margin: 10px auto 40px auto;
+#header {
     overflow: hidden;
+}
+#header #logis {
+    float: left;
+}
+#header #languages {
+    float: right;
+}
+
+#title {
+    margin: 60px auto 40px auto;
     width: 442px;
     height: 72px;
 }
