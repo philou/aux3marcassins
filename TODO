@@ -1,7 +1,16 @@
-* demander à Maman si elle peut changer son nom de domaine
-* mettre un titre à chaque page
-* deployer le site
-* ajouter une redirection de l'ancien vers le nouveau
-* envoyer l'addresse du nouveau site à toutes les autres references
+* deploiment :
+- deployer le site
+- ajouter une redirection de l'ancien vers le nouveau
+- envoyer l'addresse du nouveau site à toutes les autres references
 
-* modifier le nom auberge de pays -> auberge aux 3 marcassins
+* developpement
+- majuscules aux mots du titre
+- essayer de faire en sorte que les drapeaux et le logis ne déplace
+   pas les autre éléments
+- écrire un script windows pour uploader la carte sur le site
+- allonger le pied de page pour la section info
+- font pour le texte (papier vert pale)
+- changer les photos
+- changer le texte
+- utiliser des images pour les titres de sections pour avoir la bonne
+   police

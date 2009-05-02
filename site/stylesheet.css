@@ -6,15 +6,28 @@
 body {
     font-family: Georgia, Palatino, Times, sans-serif;
     color: #000000;
-    background: #338833 url(images/background.png) 50% 0 repeat-y;
+    background-image: url(images/oak.jpg);
     font-size: 62.5%;
 }
 
+#hShadowWrapper, #bShadowWrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#hShadowWrapper {
+    background: transparent url(images/hShadow.png) 50% 0 repeat-y;
+}
+#bShadowWrapper {
+    background: transparent url(images/bShadow.png) 50% 0 no-repeat;
+    height: 100px;
+}
+
 #wrapper {
-    background-color: #ffffff;
+    overflow: hidden;
     width: 710px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 5px 5em 5px;
 }
 
 a img {
@@ -23,17 +36,17 @@ a img {
 
 h1 {
     font-size: 3.0em;
-    color: #338833;
+    color: #1e521e;
 }
 
 h2 {
     font-size: 2.0em;
-    color: #338833;
+    color: #1e521e;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #338833;
+    color: #1e521e;
     margin: 2em auto 0.5em;
 }
 
@@ -58,16 +71,16 @@ li {
 }
 
 #title {
-    margin: 60px auto 40px auto;
-    width: 442px;
-    height: 72px;
+    margin: 0 auto;
+    width: 543px;
+    height: 232px;
 }
 
 #title span {
     position: absolute;
-    background: url(images/title.jpg) no-repeat;
-    width: 442px;
-    height: 72px;
+    background: url(images/title.png) no-repeat;
+    width: 543px;
+    height: 232px;
 }
 
 
@@ -83,7 +96,7 @@ li {
 #sections a:link, #sections a:visited {
     text-decoration: none;
     font-weight: bold;
-    color: #338833;
+    color: #1e521e;
     background: #dddddd;
     border: 1px solid #898989;
     padding: 1px 10px;
@@ -92,7 +105,7 @@ li {
 }
 #sections a:hover {
     text-decoration: underline;
-    color: #888833;
+    color: #4d002e;
 }
 #index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #info #sections a#infoTab {
     background: #ffffff;
@@ -141,7 +154,7 @@ li {
 }
 #resto #content .separator {
     font-size: 3em;
-    color: #888833;
+    color: #4d002e;
     margin: auto -1em;
 }
 #resto #content .menuNotice {

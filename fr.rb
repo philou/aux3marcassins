@@ -1,4 +1,5 @@
-{ :keywords => "auberge, restaurant, hotel, gibier, tradition, aux trois marcassins, aux 3 marcassins",
+{ :language => 'français',
+  :keywords => "auberge, restaurant, hotel, gibier, tradition, aux trois marcassins, aux 3 marcassins",
   :description => "Site officiel d'information de l'Auberge aux trois marcassins",
   :indexTab => "Accueil",
   :restoTab => "Restaurant",
