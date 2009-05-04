@@ -6,6 +6,7 @@
 body {
     font-family: Georgia, Palatino, Times, sans-serif;
     color: #000000;
+    background-color: #1e521e;
     background-image: url(images/oak.jpg);
     font-size: 62.5%;
 }
@@ -28,6 +29,8 @@ body {
     width: 710px;
     margin: 0 auto;
     padding: 5px 5px 5em 5px;
+    /*background-color: #aaffaa;*/
+    background: transparent url(images/paper.jpg) 50% 0 repeat-y;
 }
 
 a img {
@@ -62,25 +65,34 @@ li {
 
 #header {
     overflow: hidden;
+    position: relative;
 }
 #header #logis {
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
 #header #languages {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
 }
 
 #title {
     margin: 0 auto;
-    width: 543px;
-    height: 232px;
+    width: 650px;
+    height: 250px;
 }
-
+#title h1 {
+    color: transparent;
+}
 #title span {
     position: absolute;
     background: url(images/title.png) no-repeat;
-    width: 543px;
-    height: 232px;
+    width: 650px;
+    height: 250px;
 }
 
 
@@ -97,7 +109,7 @@ li {
     text-decoration: none;
     font-weight: bold;
     color: #1e521e;
-    background: #dddddd;
+    background: #cbbd96;
     border: 1px solid #898989;
     padding: 1px 10px;
     position: relative;
@@ -108,8 +120,8 @@ li {
     color: #4d002e;
 }
 #index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #info #sections a#infoTab {
-    background: #ffffff;
-    border-bottom-color: #ffffff;
+    background: #f7edd1;
+    border-bottom-color: #f7edd1;
 }
 
 /* languages flags */
@@ -126,7 +138,7 @@ li {
 
 /* general content styling */
 #content {
-    margin: 2em 0 0 0;
+    margin-top: 2em;
 }
 #content img {
     padding: 0 15px;
@@ -166,4 +178,9 @@ li {
 /* hotel */
 #hotel #content img {
     float: right;
+}
+
+/* infos */
+#info #wrapper {
+    padding-bottom: 30em;
 }
