@@ -1,12 +1,18 @@
-* deploiment :
+* deploiment
 - deployer le site
 - ajouter une redirection de l'ancien vers le nouveau
 - envoyer l'addresse du nouveau site à toutes les autres references
 
 * developpement
-- changer les photos
-- changer le texte
-- faire un lien vers le menu dans la dropbox de maman
+- ajouter un lien vers le menu de la dropbox
+- éclaircir le fond en vert plus tendre
+- modifier la texture du texte
+- prendre le texte d'AC
+- traduire le texte d'AC, ou demander à Maman
+- remplacer les tabs par des feuilles de chêne superposées
+- faire une gallerie d'images
+- ajouter des gravures de gibier en bas
+- faire un script gimp pour modifier toutes les couleurs d'un coup, et
+   laisser AC jouer avec
 
-- utiliser des images pour les titres de sections pour avoir la bonne
-   police
+
