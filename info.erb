@@ -1,21 +1,19 @@
 <%= erbInclude 'header.erb' %>
-  <title>Auberge aux trois marcassins - <%= l(:language) %> - <%= l(:infoTab)%></title>
+<title>Auberge aux trois marcassins - <%= l(:language) %> - <%= l(:infoTab)%></title>
 </head>
 
 <body id="info">
   
   <%= erbInclude 'navigation.erb' %>
-    <div id="content">
-      <div id="info">
-	<ul>
-	  <li><%= l(:openingDays) %></li>
-	  <li><%= l(:yearlyHolidays) %></li>
-	  <li>We speak english</li>
-	  <li><%= l(:howToCome) %>: <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=belleville+54&amp;sll=48.818182,6.09915&amp;sspn=0.004945,0.013819&amp;ie=UTF8&amp;ll=48.842802,6.114578&amp;spn=0.079095,0.2211&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left" title="<%= l(:mapTitle)%>">GoogleMaps</a></li>
-	  <li>60 route nationale, 54940 Belleville, France</li>
-          <li>tel: (+33)3 83 24 01 35, <a href="mailto:aux3marcassins@gmail.com" title="<%= l(:emailTitle)%>">aux3marcassins@gmail.com</a></li>
-	</ul>
-      </div>
+  <div id="content">
+    <div id="info">
+      <p><%= l(:openingDays) %></p>
+      <p><%= l(:yearlyHolidays) %></p>
+      <p>We speak english</p>
+      <p><%= l(:howToCome) %>: <a href="http://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=belleville+54&amp;sll=48.818182,6.09915&amp;sspn=0.004945,0.013819&amp;ie=UTF8&amp;ll=48.842802,6.114578&amp;spn=0.079095,0.2211&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left" title="<%= l(:mapTitle)%>">GoogleMaps</a></p>
+      <p>60 route nationale, 54940 Belleville, France</p>
+      <p>tel: (+33)3 83 24 01 35, <a href="mailto:aux3marcassins@gmail.com" title="<%= l(:emailTitle)%>">aux3marcassins@gmail.com</a></p>
     </div>
+  </div>
 
-<%= erbInclude 'footer.erb' %>
+  <%= erbInclude 'footer.erb' %>

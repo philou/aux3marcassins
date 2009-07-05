@@ -4,7 +4,8 @@
 - envoyer l'addresse du nouveau site à toutes les autres references
 
 * developpement
-- ajouter un lien vers le menu de la dropbox
+- ajouter un lien vers le menu de la dropbox - il faut utiliser le
+   dossier public de la drop box de maman pour que ca fonctionne bien
 - éclaircir le fond en vert plus tendre
 - modifier la texture du texte
 - prendre le texte d'AC

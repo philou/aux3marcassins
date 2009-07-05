@@ -11,6 +11,7 @@
 
   :restoContent1 => "Whether for business, with the family or in the company of friends, the Auberge's staff will make you feel at home. The chef adjusts his menus according to the changing seasons, game being the house speciality during the hunting season, from September to February. You are sure to find a good wine to enhance your meal in the long wine list.",
   :restoContent2 => "A fixed menu with choices of starter, main dish and dessert and a kid's menu are available daily. ",
+  :restoPrices => "Menus & Prices",
   :restaurantPic => "Dining room photo",
   :dayMenuTitle => "Example of our daily menu",
   :changedEveryDay => "modified daily",

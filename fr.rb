@@ -11,6 +11,7 @@
 
   :restoContent1 => "L'Auberge aux trois marcassins vous propose pour vos repas d'affaires ou entre amis une cuisine de caractère au gré des saisons, avec gibier en période autorisée et un grand choix de vins de qualité.",
   :restoContent2 => "Tous les jours : carte, menu suggestion, menu du jour avec choix d'entrée, de plat et de dessert. Menu enfant.",
+  :restoPrices => "Carte & tarifs",
   :restaurantPic => "Photo de la salle",
   :dayMenuTitle => "Exemple de menu du jour",
   :changedEveryDay => "modifié quotidiennement",
@@ -43,7 +44,7 @@
   :etapes => "Soirée étape : diner, nuit et petit déjeuner",
   :etapesFor2 => "Soirée étape une chambre deux personnes à tarif avantageux",
 
-  :openingDays => "le restaurant est ouverts toute la semaine sauf le samedi midi et le dimanche midi et soir.",
+  :openingDays => "Le restaurant est ouvert toute la semaine sauf le samedi midi et le dimanche midi et soir.",
   :yearlyHolidays => "L'établissement est ouvert toute l'année sauf une semaine à partir du 26 décembre et deux semaines en avril.",
   :mapTitle => "Situer l'auberge sur Google Maps",
   :howToCome => "Comment venir",
