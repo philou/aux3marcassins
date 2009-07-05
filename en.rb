@@ -1,3 +1,4 @@
+
 { :language => 'english',
   :keywords => "auberge, restaurant, hotel, game, traditional, aux trois marcassins, aux 3 marcassins",
   :description => "Official information site for l'Auberge aux trois marcassins",
@@ -35,6 +36,7 @@
 
   :hotelContent1 => "The spacious rooms are very pretty, equiped with TV and telephone, and en-suite bathroom and toilet.",
   :hotelContent2 => "Special rates for bed, breakfast and evening meal are also available for one or two people (in the same room).",
+  :hotelPrices => "Rates",
   :roomPic => "Hotel room photo",
   :hotelFacilities => "Formulas and services",
   :roomsFor2 => "Twin room",

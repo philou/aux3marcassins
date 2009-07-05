@@ -35,6 +35,7 @@
 
   :hotelContent1 => "L'Auberge aux Trois Marcassins vous propose aussi ses chambres spacieuses et confortables avec salle de bains et wc, téléphone et télévision cablée pour 1,2,3 ou 4 personnes avec service petit déjeuner.",
   :hotelContent2 => "Soirée étape comprenant le menu du jour, une boisson, le café, la chambre et le petit déjeuner.",
+  :hotelPrices => "Tarifs",
   :roomPic => "Photo d'une chambre",
   :hotelFacilities => "Formules et services",
   :roomsFor2 => "Chambres deux personnes",
