@@ -19,18 +19,31 @@ body {
 #hShadowWrapper {
     background: transparent url(images/hShadow.png) 50% 0 repeat-y;
 }
+
 #bShadowWrapper {
     background: transparent url(images/bShadow.png) 50% 0 no-repeat;
     height: 100px;
 }
 
 #wrapper {
-    overflow: hidden;
-    width: 710px;
+    width: 720px;
     margin: 0 auto;
+}
+
+#topPaper {
+    height: 49px;
+    background: transparent url(images/bg_paper_top.jpg) 50% 0 no-repeat;
+}
+
+#midPaper {
+    width: 710px;
     padding: 5px 5px 5em 5px;
-    /*background-color: #aaffaa;*/
     background: transparent url(images/bg_paper_mid.jpg) 50% 0 repeat-y;
+}
+
+#botPaper {
+    height: 81px;
+    background: transparent url(images/bg_paper_bot.jpg) 50% 0 no-repeat;
 }
 
 a img {
@@ -65,16 +78,18 @@ li {
 }
 
 #header {
+    top: -49px; /* the header is moved up to fill the top paper banner*/
     overflow: hidden;
     position: relative;
 }
-#header #logis {
+
+#logis {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 10;
 }
-#header #languages {
+#languages {
     position: absolute;
     right: 0;
     top: 0;
@@ -140,6 +155,7 @@ li {
 /* general content styling */
 #content {
     margin-top: 2em;
+    overflow: hidden;
 }
 #content img {
     padding: 0 15px;
@@ -181,7 +197,3 @@ li {
     float: right;
 }
 
-/* infos */
-#info #wrapper {
-    padding-bottom: 30em;
-}
