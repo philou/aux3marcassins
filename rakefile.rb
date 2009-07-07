@@ -92,7 +92,7 @@ LANGUAGES.each do |lang|
   directory File::join(TARGET_DIR, lang.directory)
 end
 
-rule '.html' => [proc {|tn| languageOf(tn).localsFile }, proc {|tn| File::join(TARGET_DIR, directoryOf(tn)) }, proc {|tn| erbTemplateOf(tn) } ] do |t|
+rule '.html' => [proc {|tn| languageOf(tn).localsFile }, proc {|tn| File::join(TARGET_DIR, directoryOf(tn)) }, proc {|tn| erbTemplateOf(tn) }, 'footer.erb', 'navigation.erb', 'header.erb' ] do |t|
 
   language = languageOf(t.name)
   locals = eval(readFileContent( language.localsFile))

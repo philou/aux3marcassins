@@ -6,9 +6,10 @@
   :restoTab => "Restaurant",
   :hotelTab => "Hotel",
   :infoTab => "Informations",
+  :gallery => "Click for more photos",
 
+  :tablePic => "Dressed dining room table photo",
   :indexContent => "Situated between Nancy and Metz, 2 minutes from A31 Beaune - Luxembourg motorway, the Auberge aux Trois Marcassins offers delightful rooms and delicious traditional French cuisine.",
-  :frontPic => "Front door photo",
 
   :restoContent1 => "Whether for business, with the family or in the company of friends, the Auberge's staff will make you feel at home. The chef adjusts his menus according to the changing seasons, game being the house speciality during the hunting season, from September to February. You are sure to find a good wine to enhance your meal in the long wine list.",
   :restoContent2 => "A fixed menu with choices of starter, main dish and dessert and a kid's menu are available daily. ",
@@ -46,6 +47,7 @@
   :etapes => "B + B and evening meal one person",
   :etapesFor2 => "B + B and evening meal for two in the same room",
 
+  :frontPic => "Front door photo",
   :openingDays => "The restaurant is opened all week except Saturday lunch and Sunday lunch and diner",
   :yearlyHolidays => "The Auberge (roooms and restaurant) is opened all year except for one week from the 26th Decembre and two weeks in April.",
   :mapTitle => "View the auberge on Google Maps",

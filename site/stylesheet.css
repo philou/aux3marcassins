@@ -40,6 +40,11 @@ body {
     padding: 5px 5px 5em 5px;
     background: transparent url(images/bg_paper_mid.jpg) 50% 0 repeat-y;
 }
+#midPaper #header, #midPaper #content {
+    top: -49px; /* mid paper content is moved up to fill the top paper banner*/
+    overflow: hidden;
+    position: relative;
+}
 
 #botPaper {
     height: 81px;
@@ -75,12 +80,6 @@ li {
     font-size: 1.5em;
     list-style-position: inside;
     list-style-image: url(images/bullet.png);
-}
-
-#header {
-    top: -49px; /* the header is moved up to fill the top paper banner*/
-    overflow: hidden;
-    position: relative;
 }
 
 #logis {
@@ -155,24 +154,33 @@ li {
 /* general content styling */
 #content {
     margin-top: 2em;
-    overflow: hidden;
 }
-#content img {
-    padding: 0 15px;
+.illustration {
+    margin: 0 15px;
+    padding: 3px;
+    border: 1px solid #1e521e;
+}
+.illustration p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.illustration em {
+    font-size: 0.6em;
 }
 
 /* index */
 #index #content img {
-    float: right;
+    border-top: 1px solid #1e521e;
+    border-bottom: 1px solid #1e521e;
 }
 
 /* restaurant */
-#resto #content img {
+#resto #content .illustration {
     float: left;
 }
 #resto #content #summary {
     overflow: hidden;
-    margin-bottom: -14em;
 }
 #resto #content .menu {
     text-align: center;
@@ -193,7 +201,12 @@ li {
 }
 
 /* hotel */
-#hotel #content img {
+#hotel #content .illustration {
+    float: right;
+}
+
+/* info */
+#info #content .illustration {
     float: right;
 }
 
