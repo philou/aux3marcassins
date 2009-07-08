@@ -17,11 +17,11 @@ body {
 }
 
 #hShadowWrapper {
-    background: transparent url(images/hShadow.png) 50% 0 repeat-y;
+    background: transparent url(../images/hShadow.png) 50% 0 repeat-y;
 }
 
 #bShadowWrapper {
-    background: transparent url(images/bShadow.png) 50% 0 no-repeat;
+    background: transparent url(../images/bShadow.png) 50% 0 no-repeat;
     height: 100px;
 }
 
@@ -32,13 +32,13 @@ body {
 
 #topPaper {
     height: 49px;
-    background: transparent url(images/bg_paper_top.jpg) 50% 0 no-repeat;
+    background: transparent url(../images/bg_paper_top.jpg) 50% 0 no-repeat;
 }
 
 #midPaper {
     width: 710px;
     padding: 5px 5px 5em 5px;
-    background: transparent url(images/bg_paper_mid.jpg) 50% 0 repeat-y;
+    background: transparent url(../images/bg_paper_mid.jpg) 50% 0 repeat-y;
 }
 #midPaper #header, #midPaper #content {
     top: -49px; /* mid paper content is moved up to fill the top paper banner*/
@@ -48,7 +48,7 @@ body {
 
 #botPaper {
     height: 81px;
-    background: transparent url(images/bg_paper_bot.jpg) 50% 0 no-repeat;
+    background: transparent url(../images/bg_paper_bot.jpg) 50% 0 no-repeat;
 }
 
 a img {
@@ -79,7 +79,7 @@ p {
 li {
     font-size: 1.5em;
     list-style-position: inside;
-    list-style-image: url(images/bullet.png);
+    list-style-image: url(../images/bullet.png);
 }
 
 #logis {
@@ -105,7 +105,7 @@ li {
 }
 #title span {
     position: absolute;
-    background: url(images/title.png) no-repeat;
+    background: url(../images/title.png) no-repeat;
     width: 650px;
     height: 250px;
 }
@@ -173,6 +173,10 @@ li {
 #index #content img {
     border-top: 1px solid #1e521e;
     border-bottom: 1px solid #1e521e;
+}
+#index #content p {
+    font-style: italic;
+    text-align: center;
 }
 
 /* restaurant */
