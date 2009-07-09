@@ -78,8 +78,6 @@ p {
 
 li {
     font-size: 1.5em;
-    list-style-position: inside;
-    list-style-image: url(../images/bullet.png);
 }
 
 #logis {
@@ -112,35 +110,70 @@ li {
 
 
 /* sections tabs */
-#sections {
-    padding: 1px;
-    border: 1px solid transparent;
-    border-bottom-color: #898989;
-}
 #sections li {
-    display: inline;
+    padding: 1px;
+    list-style-type: none;
+    float: left;
+    width: 175px;
+    height: 63px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #4d002e;
+}
+#sections #liAccueil {
+    background: url(../images/leaf-small-Accueil.png) no-repeat 0 0;
+}
+#sections #liWelcome {
+    background: url(../images/leaf-small-Welcome.png) no-repeat 0 0;
+}
+#sections #liRestaurant {
+    background: url(../images/leaf-small-Restaurant.png) no-repeat 0 0;
+}
+#sections #liHotel {
+    background: url(../images/leaf-small-Hotel.png) no-repeat 0 0;
+}
+#sections #liInformations {
+    background: url(../images/leaf-small-Informations.png) no-repeat 0 0;
 }
 #sections a:link, #sections a:visited {
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: #1e521e;
-    background: #cbbd96;
-    border: 1px solid #898989;
-    padding: 1px 10px;
-    position: relative;
-    margin-right: 5px;
+    color: transparent;
+    display: block;
+    height: 23px;
+    padding: 40px 0 40px 15px;
 }
-#sections a:hover {
-    text-decoration: underline;
-    color: #4d002e;
+#index #sections a#tabAccueil {
+    background: url(../images/leaf-small-Accueil.png) no-repeat 0 0;
 }
-#index #sections a#indexTab, #resto #sections a#restoTab, #hotel #sections a#hotelTab, #info #sections a#infoTab {
-    background: #f7edd1;
-    border-bottom-color: #f7edd1;
+#index #sections a#tabWelcome  {
+    background: url(../images/leaf-small-Welcome.png) no-repeat 0 0;
 }
-/* le coup des span ne fonctionne pas avec les listes inlines ... il faudra peut être essayer avec des floats.
-   
-*/
+#resto #sections a#tabRestaurant {
+    background: url(../images/leaf-small-Restaurant.png) no-repeat 0 0;
+}
+#hotel #sections a#tabHotel {
+    background: url(../images/leaf-small-Hotel.png) no-repeat 0 0;
+}
+#info #sections a#tabInformations {
+    background: url(../images/leaf-small-Informations.png) no-repeat 0 0;
+}
+
+#sections a#tabAccueil:hover, #sections a#tabAccueil:active{
+    background: url(../images/leaf-big-Accueil.png) no-repeat 0 0;
+}
+#sections a#tabWelcome:hover, #sections a#tabWelcome:active{
+    background: url(../images/leaf-big-Welcome.png) no-repeat 0 0;
+}
+#sections a#tabRestaurant:hover, #sections a#tabRestaurant:active{
+    background: url(../images/leaf-big-Restaurant.png) no-repeat 0 0;
+}
+#sections a#tabHotel:hover, #sections a#tabHotel:active{
+    background: url(../images/leaf-big-Hotel.png) no-repeat 0 0;
+}
+#sections a#tabInformations:hover, #sections a#tabInformations:active{
+    background: url(../images/leaf-big-Informations.png) no-repeat 0 0;
+}
 
 /* languages flags */
 #languages {
@@ -155,9 +188,6 @@ li {
 }
 
 /* general content styling */
-#content {
-    margin-top: 2em;
-}
 .illustration {
     margin: 0 15px;
     padding: 3px;
@@ -174,8 +204,8 @@ li {
 
 /* index */
 #index #content img {
-    border-top: 1px solid #1e521e;
-    border-bottom: 1px solid #1e521e;
+    border-top: 1px solid #4d002e;
+    border-bottom: 1px solid #4d002e;
 }
 #index #content p {
     font-style: italic;
@@ -210,6 +240,11 @@ li {
 /* hotel */
 #hotel #content .illustration {
     float: right;
+}
+
+#hotel #content li {
+    list-style-position: inside;
+    list-style-image: url(../images/bullet.png);
 }
 
 /* info */
