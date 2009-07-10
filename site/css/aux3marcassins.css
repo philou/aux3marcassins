@@ -118,12 +118,12 @@ li {
 
 /* sections tabs */
 #sections li {
-    padding: 1px;
+    padding: 0 1px;
     list-style-type: none;
     float: left;
     width: 175px;
-    height: 63px;
-    margin-bottom: 40px;
+    height: 58px;
+    margin-bottom: 45px;
     border-bottom: 1px solid #5b2e17;
 }
 #sections #liAccueil {
@@ -147,27 +147,26 @@ li {
     font-weight: bold;
     color: transparent;
     display: block;
-    height: 23px;
-    padding: 40px 0 0px 15px;
+    height: 58px;
 }
 #index #sections a#tabAccueil {
-    padding-bottom: 40px;
+    height: 103px;
     background: url(../images/leaf-big-Accueil.png) no-repeat 0 0;
 }
 #index #sections a#tabWelcome  {
-    padding-bottom: 40px;
+    height: 103px;
     background: url(../images/leaf-big-Welcome.png) no-repeat 0 0;
 }
 #resto #sections a#tabRestaurant {
-    padding-bottom: 40px;
+    height: 103px;
     background: url(../images/leaf-big-Restaurant.png) no-repeat 0 0;
 }
 #hotel #sections a#tabHotel {
-    padding-bottom: 40px;
+    height: 103px;
     background: url(../images/leaf-big-Hotel.png) no-repeat 0 0;
 }
 #info #sections a#tabInformations {
-    padding-bottom: 40px;
+    height: 103px;
     background: url(../images/leaf-big-Informations.png) no-repeat 0 0;
 }
 
