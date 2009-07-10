@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: Georgia, Palatino, Times, sans-serif;
+    font-family: Verdana, Trebuchet MS, Palatino, Times, sans-serif;
     color: #000000;
     background-color: #76bb1d;
     background-attachment: fixed;
@@ -80,6 +80,7 @@ h3 {
 
 p {
     font-size: 1.5em;
+    line-height: 2em;
     margin: 0 0 1em 0;
 }
 
@@ -212,6 +213,10 @@ li {
 .illustration em {
     font-size: 0.6em;
 }
+#content #rates {
+    text-align: center;
+    margin-top: 2em;
+}
 
 /* index */
 #index #content img {
@@ -252,7 +257,6 @@ li {
 #hotel #content .illustration {
     float: right;
 }
-
 #hotel #content li {
     list-style-position: inside;
     list-style-image: url(../images/bullet.png);
