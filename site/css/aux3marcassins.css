@@ -1,3 +1,9 @@
+/*
+ Main colors:
+ light green: #76bb1d
+ chocolate: #5b2e17
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +12,8 @@
 body {
     font-family: Georgia, Palatino, Times, sans-serif;
     color: #000000;
-    background-color: #1e521e;
+    background-color: #76bb1d;
+    background-attachment: fixed;
     background-image: url(../images/oak.jpg);
     font-size: 62.5%;
 }
@@ -57,17 +64,17 @@ a img {
 
 h1 {
     font-size: 3.0em;
-    color: #1e521e;
+    color: #76bb1d;
 }
 
 h2 {
     font-size: 2.0em;
-    color: #1e521e;
+    color: #76bb1d;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #1e521e;
+    color: #5b2e17;
     margin: 2em auto 0.5em;
 }
 
@@ -117,7 +124,7 @@ li {
     width: 175px;
     height: 63px;
     margin-bottom: 40px;
-    border-bottom: 1px solid #4d002e;
+    border-bottom: 1px solid #5b2e17;
 }
 #sections #liAccueil {
     background: url(../images/leaf-small-Accueil.png) no-repeat 0 0;
@@ -141,22 +148,27 @@ li {
     color: transparent;
     display: block;
     height: 23px;
-    padding: 40px 0 40px 15px;
+    padding: 40px 0 0px 15px;
 }
 #index #sections a#tabAccueil {
-    background: url(../images/leaf-small-Accueil.png) no-repeat 0 0;
+    padding-bottom: 40px;
+    background: url(../images/leaf-big-Accueil.png) no-repeat 0 0;
 }
 #index #sections a#tabWelcome  {
-    background: url(../images/leaf-small-Welcome.png) no-repeat 0 0;
+    padding-bottom: 40px;
+    background: url(../images/leaf-big-Welcome.png) no-repeat 0 0;
 }
 #resto #sections a#tabRestaurant {
-    background: url(../images/leaf-small-Restaurant.png) no-repeat 0 0;
+    padding-bottom: 40px;
+    background: url(../images/leaf-big-Restaurant.png) no-repeat 0 0;
 }
 #hotel #sections a#tabHotel {
-    background: url(../images/leaf-small-Hotel.png) no-repeat 0 0;
+    padding-bottom: 40px;
+    background: url(../images/leaf-big-Hotel.png) no-repeat 0 0;
 }
 #info #sections a#tabInformations {
-    background: url(../images/leaf-small-Informations.png) no-repeat 0 0;
+    padding-bottom: 40px;
+    background: url(../images/leaf-big-Informations.png) no-repeat 0 0;
 }
 
 #sections a#tabAccueil:hover, #sections a#tabAccueil:active{
@@ -191,7 +203,7 @@ li {
 .illustration {
     margin: 0 15px;
     padding: 3px;
-    border: 1px solid #1e521e;
+    border: 1px solid #5b2e17;
 }
 .illustration p {
     margin: 0;
@@ -204,8 +216,8 @@ li {
 
 /* index */
 #index #content img {
-    border-top: 1px solid #4d002e;
-    border-bottom: 1px solid #4d002e;
+    border-top: 1px solid #5b2e17;
+    border-bottom: 1px solid #5b2e17;
 }
 #index #content p {
     font-style: italic;
@@ -228,7 +240,7 @@ li {
 }
 #resto #content .separator {
     font-size: 3em;
-    color: #4d002e;
+    color: #76bb1d;
     margin: auto -1em;
 }
 #resto #content .menuNotice {
