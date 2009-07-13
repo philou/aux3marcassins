@@ -199,6 +199,11 @@ li {
     position: relative;
 }
 
+/* lightbox hidden galleries */
+#gallery {
+    display: none;
+}
+
 /* general content styling */
 .illustration {
     margin: 0 15px;

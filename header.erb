@@ -9,6 +9,18 @@
     <meta name="robots" content="all,index" />
     <meta name="author" content="Philippe Bourgau for www.aux3marcassins.com" />
     <meta name="font" content="Scriptina used for text in .pngs" />
+    <meta name="lightbox effect" content="Lightbox 2 by Lokesh Dhakar from www.huddletogether.com/projects/lightbox2/" />
 
     <link rel="stylesheet" href="<%= l(:resPrefix) %>/css/aux3marcassins.css" type="text/css" media="screen" title="main stylesheet"/>
+
+    <script type="text/javascript" src="<%= l(:resPrefix) %>/js/prototype.js"></script>
+    <script type="text/javascript" src="<%= l(:resPrefix) %>/js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="<%= l(:resPrefix) %>/js/lightbox.js"></script>
+    <script type="text/javascript">
+      LightboxOptions.fileLoadingImage = '<%= l(:resPrefix) %>/' + LightboxOptions.fileLoadingImage;
+      LightboxOptions.fileBottomNavCloseImage = '<%= l(:resPrefix) %>/' + LightboxOptions.fileBottomNavCloseImage;
+    </script>
+    <link rel="stylesheet" href="<%= l(:resPrefix) %>/css/lightbox.css" type="text/css" media="screen" />
+
+
 
