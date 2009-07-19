@@ -227,6 +227,9 @@ li {
     text-align: center;
     margin-top: 2em;
 }
+#content ul {
+    margin-bottom: 1em;
+}
 
 /* index */
 #index #content img {
