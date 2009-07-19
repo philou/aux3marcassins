@@ -78,6 +78,12 @@ h3 {
     margin: 2em auto 0.5em;
 }
 
+h4 {
+    font-size: 1.5em;
+    color: #5b2e17;
+    margin: 2em auto 0.5em;
+}
+
 p {
     font-size: 1.5em;
     line-height: 2em;
@@ -101,15 +107,15 @@ li {
     z-index: 10;
 }
 
+.behindPicture {
+    display: none;
+}
 #title {
     margin: 0 auto;
     width: 650px;
     height: 250px;
 }
-#title h1 {
-    color: transparent;
-}
-#title span {
+#title span.textPicture {
     position: absolute;
     background: url(../images/title.png) no-repeat;
     width: 650px;
@@ -118,6 +124,9 @@ li {
 
 
 /* sections tabs */
+#sections  {
+    height: 103px;
+}
 #sections li {
     padding: 0 1px;
     list-style-type: none;
@@ -143,10 +152,6 @@ li {
     background: url(../images/leaf-small-Informations.png) no-repeat 0 0;
 }
 #sections a:link, #sections a:visited {
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: transparent;
     display: block;
     height: 58px;
 }
@@ -228,7 +233,7 @@ li {
     border-top: 1px solid #5b2e17;
     border-bottom: 1px solid #5b2e17;
 }
-#index #content p {
+#index #content {
     font-style: italic;
     text-align: center;
 }
@@ -243,19 +248,19 @@ li {
 #resto #content .menu {
     text-align: center;
 }
-#resto #content em.menuNotice {
-    font-size: 1em;
-    font-style: italic;
-}
-#resto #content .separator {
-    font-size: 3em;
-    color: #76bb1d;
-    margin: auto -1em;
-}
 #resto #content .menuNotice {
     font-size: 1em;
     font-style: italic;
-    margin: 0 auto 0.5em;
+    margin: 0 auto 1.5em;
+}
+#resto #content div.menuItem {
+    font-size: 1.5em;
+    margin: 0;
+}
+#resto #content div.menuSeparator {
+    font-size: 3em;
+    color: #76bb1d;
+    margin: auto -1em;
 }
 
 /* hotel */

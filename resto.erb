@@ -16,44 +16,34 @@
 	</div>
 
 	<div>
+	  <h3><%= l(:restoTitle) %></h3>
+	  <h4><%= l(:restoSubTitle1) %></h4>
 	  <p><%= l(:restoContent1) %></p>
+	  <h4><%= l(:restoSubTitle2) %></h4>
 	  <p><%= l(:restoContent2) %></p>
+	  <p><%= l(:restoContent3) %></p>
+	  <p><%= l(:restoContent4) %></p>
 	</div>
       </div>
 
-      <div id="dayMenu" class="menu">
-	<h3><%= l(:dayMenuTitle) %></h3>
-	<p class="menuNotice">(<%= l(:changedEveryDay) %>)</p>
-	<p><%= l(:fishSoup) %></p>
-	<p><%= l(:salad) %></p>
-	<p><%= l(:ham) %></p>
-	<p class="separator">~</p>
-	<p><%= l(:rabbit) %></p>
-	<p><%= l(:emporor) %></p>
-	<p class="separator">~</p>
-	<p><%= l(:cheeseOrDessert) %></p>
-      </div>
+      <p id="rates"><a href="carte.DOC"><%= l(:restoPrices)%></a></p>
 
-      <div id="aLaCarte" class="menu">
-	<h3><%= l(:aLaCarteTitle) %></h3>
-	<p><%= l(:wildBoarHam) %></p>
-	<p><%= l(:fattedDuckLiver) %></p>
-	<p><%= l(:effilochade) %></p>
-	<p class="separator">~</p>
-	<p><%= l(:scalops) %></p>
-	<p><%= l(:roeDeer) %></p>
-	<p><%= l(:grilledWildBoar) %></p>
-	<p><%= l(:redDeer) %></p>
-	<p><%= l(:duck) %></p>
-	<p class="separator">~</p>
-	<p><%= l(:frozenNougat) %></p>
+      <div id="dayMenu" class="menu">
+	<h4><%= l(:dayMenuTitle) %></h4>
+	<div class="menuNotice">(<%= l(:changedEveryDay) %>)</div>
+	<div class="menuItem"><%= l(:fishSoup) %></div>
+	<div class="menuItem"><%= l(:salad) %></div>
+	<div class="menuItem"><%= l(:ham) %></div>
+	<div class="menuSeparator">~</div>
+	<div class="menuItem"><%= l(:rabbit) %></div>
+	<div class="menuItem"><%= l(:emporor) %></div>
+	<div class="menuSeparator">~</div>
+	<div class="menuItem"><%= l(:cheeseOrDessert) %></div>
       </div>
 
       <div id="otherMenus" class="menu">
-	<h3><%= l(:otherMenusTitle)%></h3>
+	<h4><%= l(:otherMenusTitle)%></h4>
       </div>
-
-      <p id="rates"><a href="carte.DOC"><%= l(:restoPrices)%></a></p>
 
     </div>
   </div>
