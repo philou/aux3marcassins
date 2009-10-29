@@ -1,6 +1,5 @@
-
 { :language => 'english',
-  :keywords => "auberge, restaurant, hotel, game, traditional, aux trois marcassins, aux 3 marcassins",
+  :keywords => "game, traditional",
   :description => "Official information site for l'Auberge aux trois marcassins",
   :indexTab => "Welcome",
   :restoTab => "Restaurant",
