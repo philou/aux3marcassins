@@ -37,6 +37,8 @@
   :hotelContent2 => "From one to four people, you will feel welcome in our rooms that are equiped with en-suite bathroom, toilet, telephone, TV and free access Wifi.",
   :hotelContent3 => "Why not choose a \"Soirée étape\" (complete formula containing the evening meal, the night and the breakfast) for one or two people for a special rate?",
   :hotelPrices => "Formulas & rates",
+  :freshInfoTitle => "Regularly updated news",
+  :freshInfo => "Our latest news",
 
   :infoTitle => "Situation",
   :howToCome => "Situated between Nancy and Metz, 2 minutes from A31 Beaune - Luxembourg motorway, the Auberge Aux Trois Marcassins",

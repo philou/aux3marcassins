@@ -46,6 +46,8 @@
   :yearlyClosureTitle => "Fermeture annuelle",
   :yearlyClosure1 => "Une semaine à partir du 26 décembre",
   :yearlyClosure2 => "Deux semaines en avril",
+  :freshInfoTitle => "Actualités régulièrement mises à jour",
+  :freshInfo => "Nos dernières actualités",
 
   :captionFrontDoor => "Porte d'entrée",
   :captionFrontLeft => "Facade vue de gauche",
