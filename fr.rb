@@ -1,5 +1,5 @@
 { :language => 'français',
-  :keywords => "gibier, tradition",
+  :keywords => "gibier, tradition, autoroute, chambre, dormir, étape",
   :description => "Site officiel d'information de l'Auberge aux trois marcassins",
   :indexTab => "Accueil",
   :restoTab => "Restaurant",

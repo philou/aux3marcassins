@@ -1,5 +1,5 @@
 { :language => 'english',
-  :keywords => "game, traditional",
+  :keywords => "game, traditional, motorway, room, bedroom, sleep",
   :description => "Official information site for l'Auberge aux trois marcassins",
   :indexTab => "Welcome",
   :restoTab => "Restaurant",
@@ -9,9 +9,9 @@
 
   :tablePic => "Dressed dining room table photo",
   :indexTitle => "Welcome to Lorraine ...",
-  :indexContent1 => "You will get a very warm welcome, in the heart of Lorraine country, at the Auberge Aux Trois Marcassins.",
-  :indexContent2 => "In a friendly atmosphere, take the time to discover or rediscover traditional french cuisine ...",
-  :indexContent3 => "... and why not stay in one of our wide and delightfully charming rooms ?",
+  :indexContent1 => "A charming family Auberge run by Pierre and Kathleen Bourgau and situated in the heart of \"La Lorraine\", on the edge of the Lorraine Regional Park.",
+  :indexContent2 => "Completely restored from a typical local farmhouse, it now has a slight hunting lodge atmosphere. Game being served from September to January along with other fish and meat dishes.",
+  :indexContent3 => "The wood beamed en suite rooms, decorated in the same vein, are equipped with flat screen TV, WI FI.",
 
   :restoTitle => "Authenticity",
   :restoSubTitle1 => "... for your taste ...",
