@@ -1,5 +1,7 @@
 { :language => 'english',
   :keywords => "game, traditional, motorway, room, bedroom, sleep",
+  :ieBannerTitle => "You are using an outdated browser",
+  :ieBannerText => "For a better experience using this site, please upgrade to a modern web browser.",
   :description => "Official information site for l'Auberge aux trois marcassins",
   :indexTab => "Welcome",
   :restoTab => "Restaurant",

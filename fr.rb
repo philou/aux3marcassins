@@ -1,5 +1,7 @@
 { :language => 'français',
   :keywords => "gibier, tradition, autoroute, chambre, dormir, étape",
+  :ieBannerTitle => "Vous utilisez un navigateur obsolete",
+  :ieBannerText => "Pour une meilleure expérience avec ce site, s'il vous plait migrez vers un navigateur plus moderne.",
   :description => "Site officiel d'information de l'Auberge aux trois marcassins",
   :indexTab => "Accueil",
   :restoTab => "Restaurant",
