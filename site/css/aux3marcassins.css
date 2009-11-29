@@ -13,7 +13,6 @@ body {
     font-family: Verdana, Trebuchet MS, Palatino, Times, sans-serif;
     color: #000000;
     background-color: #76bb1d;
-    background-attachment: fixed;
     background-image: url(../images/oak.jpg);
     font-size: 62.5%;
 }
