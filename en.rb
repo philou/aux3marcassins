@@ -14,6 +14,7 @@
   :indexContent1 => "A charming family Auberge run by Pierre and Kathleen Bourgau and situated in the heart of \"La Lorraine\", on the edge of the Lorraine Regional Park.",
   :indexContent2 => "Completely restored from a typical local farmhouse, it now has a slight hunting lodge atmosphere. Game being served from September to January along with other fish and meat dishes.",
   :indexContent3 => "The wood beamed en suite rooms, decorated in the same vein, are equipped with flat screen TV, WI FI.",
+  :freshInfo => "Latest news",
 
   :restoTitle => "Authenticity",
   :restoSubTitle1 => "... for your taste ...",
@@ -39,7 +40,6 @@
   :hotelContent3 => "Why not choose a \"Soirée étape\" (complete formula containing the evening meal, the night and the breakfast) for one or two people for a special rate?",
   :hotelPrices => "Formulas & rates",
   :freshInfoTitle => "Regularly updated news",
-  :freshInfo => "Our latest news",
 
   :infoTitle => "Situation",
   :howToCome => "Situated between Nancy and Metz, 2 minutes from A31 Beaune - Luxembourg motorway, the Auberge Aux Trois Marcassins",

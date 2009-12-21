@@ -14,6 +14,7 @@
   :indexContent1 => "Au cœur du pays lorrain, l’Auberge Aux Trois Marcassins vous réserve un accueil chaleureux et convivial.",
   :indexContent2 => "Dans une ambiance discrètement chic, prenez le temps de découvrir ou redécouvrir une cuisine de terroir de qualité...",
   :indexContent3 => "...et reposez-vous dans nos chambres spacieuses et confortables.",
+  :freshInfo => "Dernières actualités",
 
   :restoTitle => "L'authenticité",
   :restoSubTitle1 => "... au service de vos papilles ...",
@@ -49,7 +50,6 @@
   :yearlyClosure1 => "Une semaine à partir du 26 décembre",
   :yearlyClosure2 => "Deux semaines en avril",
   :freshInfoTitle => "Actualités régulièrement mises à jour",
-  :freshInfo => "Nos dernières actualités",
 
   :captionFrontDoor => "Porte d'entrée",
   :captionFrontLeft => "Facade vue de gauche",
