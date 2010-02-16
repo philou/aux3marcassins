@@ -222,7 +222,7 @@ li {
 .illustration em {
     font-size: 0.6em;
 }
-#content #rates {
+#content .detailLink {
     text-align: center;
     margin-top: 2em;
 }
@@ -246,23 +246,6 @@ li {
 }
 #resto #content #summary {
     overflow: hidden;
-}
-#resto #content .menu {
-    text-align: center;
-}
-#resto #content .menuNotice {
-    font-size: 1em;
-    font-style: italic;
-    margin: 0 auto 1.5em;
-}
-#resto #content div.menuItem {
-    font-size: 1.5em;
-    margin: 0;
-}
-#resto #content div.menuSeparator {
-    font-size: 3em;
-    color: #76bb1d;
-    margin: auto -1em;
 }
 
 /* hotel */

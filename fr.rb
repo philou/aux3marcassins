@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 { :language => 'français',
   :keywords => "gibier, tradition, autoroute, chambre, dormir, étape",
   :ieBannerTitle => "Vous utilisez un navigateur obsolete",
@@ -30,6 +31,9 @@
   :hotelContent2 => "Nous pouvons accueillir de une à quatre personnes dans nos chambres toutes équipées de salle de bain/douche et wc, téléphone, télévision, et accès wifi libre.",
   :hotelContent3 => "Pourquoi ne pas opter pour une Soirée Etape (formule intégrale comprenant le diner, la nuit et le petit déjeuner) pour une ou deux personnes à un tarif avantageux?",
   :hotelPrices => "Formules & Tarifs",
+  :hotelBooking => "Réserver une chambre",
+  :hotelBookingTitle => "Réserver une chambre en ligne sur reservit",
+  :hotelBookingUrl => "http://hotel.reservit.com/reservit/reserhotel.php?lang=FR&hotelid=6297",
 
   :infoTitle => "Comment nous rejoindre?",
   :howToCome => "Située entre Metz et Nancy, à une minute de l'Axe autoroutier A31, sortie 25, L'Auberge Aux Trois Marcassins vous attend",
